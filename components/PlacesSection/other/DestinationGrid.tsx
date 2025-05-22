@@ -1,6 +1,7 @@
 import React from 'react';
 import { Destination } from '@/types/destination';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 interface DestinationGridProps {
   destinations: Destination[];
@@ -30,11 +31,13 @@ const DestinationGrid: React.FC<DestinationGridProps> = ({ destinations }) => {
             custom={i}
           >
             <div className="overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:shadow-lg bg-white dark:bg-black/50">
-              <div className="h-64 overflow-hidden">
-                <img 
-                  src={destination.image} 
-                  alt={destination.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              <div className=" relative h-64 overflow-hidden relative">
+                <Image
+                  src={destination.image}
+                  alt={destination.title}
+                  fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <div className="p-6">

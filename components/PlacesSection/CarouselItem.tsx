@@ -1,6 +1,7 @@
 import React from 'react';
 import { Destination } from '../../types/destination';
 import { motion } from 'framer-motion';
+import Image from 'next/image'; // Import Next.js Image
 
 interface CarouselItemProps {
   destination: Destination;
@@ -17,11 +18,13 @@ const CarouselItem: React.FC<CarouselItemProps> = ({ destination, active }) => {
       style={{ zIndex: active ? 10 : 0, pointerEvents: active ? 'auto' : 'none' }}
     >
       <div className="relative w-full h-full">
-        <img 
-          src={destination.image} 
-          alt={destination.title} 
+        <Image
+          src={destination.image}
+          alt={destination.title}
+          fill
+          sizes="(min-width: 1024px) 60vw, 100vw"
           className="w-full h-full object-cover"
-          loading="lazy"
+          priority={active}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
         <div className="absolute bottom-0 left-0 right-0 p-4 md:p-8 text-white">

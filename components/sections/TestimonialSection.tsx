@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -75,15 +76,19 @@ export default function TestimonialsSection() {
                 >
                   <div className="bg-background rounded-xl p-8 shadow-sm border border-border/50">
                     <Quote className="h-10 w-10 text-primary/20 mb-4" />
-                    <p className="text-lg mb-6 italic">"{testimonial.content}"</p>
-                    <div className="flex items-center">
-                      <div className="h-12 w-12 rounded-full overflow-hidden mr-4">
-                        <img 
-                          src={testimonial.avatar} 
-                          alt={testimonial.author}
-                          className="h-full w-full object-cover"
+                        <p className="text-lg mb-6 italic">
+                        &quot;{testimonial.content}&quot;
+                        </p>                    
+                        <div className="flex items-center">
+                      <div className="relative h-12 w-12 rounded-full overflow-hidden mr-4">
+                        <Image
+                            src={testimonial.avatar}
+                            alt={testimonial.author}
+                            width={48}
+                            height={48}
+                            className="h-full w-full object-cover"
                         />
-                      </div>
+                        </div>
                       <div>
                         <h4 className="font-semibold text-yellow-500">{testimonial.author}</h4>
                         <p className="text-muted-foreground text-sm">{testimonial.role}</p>

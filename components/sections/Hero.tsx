@@ -8,12 +8,7 @@ import { ArrowDownCircle, ArrowUpCircle } from 'lucide-react';
 
 
 export function HeroSection() {
-  const scrollToNextSection = () => {
-    const nextSection = document.getElementById('about');
-    if (nextSection) {
-      nextSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  
 
   // State for showing the back-to-top button
   const [showTop, setShowTop] = React.useState(false);

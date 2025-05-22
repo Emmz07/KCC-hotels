@@ -35,7 +35,7 @@ export function PicnicSection() {
               </p>
               <p className="text-muted-foreground">
                 Our events team will create a bespoke experience tailored to your preferences, with gourmet 
-                catering options, tasteful decorations, and attentive service. Whether you're planning a 
+                catering options, tasteful decorations, and attentive service. Whether you&apos;re planning a 
                 corporate team-building event or a romantic celebration, our outdoor spaces offer a refreshing 
                 alternative to traditional indoor venues.
               </p>

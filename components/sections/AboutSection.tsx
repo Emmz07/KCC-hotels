@@ -19,6 +19,7 @@ export function AboutSection() {
                 src="https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg"
                 alt="Hotel Lobby"
                 fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
@@ -35,7 +36,7 @@ export function AboutSection() {
                 architecture with modern amenities.
               </p>
               <p className="text-muted-foreground">
-                Whether you're traveling for business or leisure, our dedicated staff is committed to ensuring 
+                Whether you&apos;re traveling for business or leisure, our dedicated staff is committed to ensuring 
                 your stay exceeds expectations. From our gourmet restaurants to our state-of-the-art fitness 
                 facilities, every aspect of KCC Hotels is crafted to deliver excellence.
               </p>

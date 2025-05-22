@@ -4,7 +4,8 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react"
+import Image from "next/image";
 
 const galleryImages = [
   {
@@ -27,7 +28,7 @@ const galleryImages = [
   },
   {
     id: 4,
-    src: "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    src: "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=600",
     alt: "Restaurant interior",
     span: "col-span-2 row-span-1",
   },
@@ -68,10 +69,12 @@ export default function GallerySection() {
               )}
               onClick={() => openModal(image)}
             >
-              <div className="aspect-square lg:aspect-auto lg:h-full">
-                <img 
+              <div className="relative aspect-square lg:aspect-auto lg:h-full">
+                <Image 
                   src={image.src} 
                   alt={image.alt}
+                  fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
@@ -97,11 +100,16 @@ export default function GallerySection() {
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent className="sm:max-w-3xl p-0 overflow-hidden">
           {selectedImage && (
-            <img 
+            <div className="relative h-full w-full">
+            <Image 
               src={selectedImage.src} 
               alt={selectedImage.alt}
-              className="w-full h-auto"
+              fill
+              sizes="90vw"
+              className="w-full h-auto object-contain"
             />
+            </div>
+            
           )}
         </DialogContent>
       </Dialog>

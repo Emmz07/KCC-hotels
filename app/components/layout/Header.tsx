@@ -32,7 +32,7 @@ export function Navbar() {
         ? "bg-background/80 backdrop-blur-md shadow-sm py-2" 
         : "bg-transparent py-4"
     )}>
-      <div className="container flex items-center justify-between ">
+      <div className="container relative flex items-center justify-between ">
         <Link href="/" className="flex items-center gap-2">
             <Image
             src="/KCC.png"

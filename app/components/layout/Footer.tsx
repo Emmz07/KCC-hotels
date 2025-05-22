@@ -9,7 +9,7 @@ export function Footer() {
     <footer className="bg-muted py-12 border-t px-12">
       <div className="container grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <div className="space-y-4">
-          <div className="flex items-center gap-2">
+          <div className="flex relative items-center gap-2">
             <Link href="/" className="flex items-center gap-2">
             <Image
             src="/KCCC.png"

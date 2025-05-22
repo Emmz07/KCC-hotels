@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const categories = ["All", "Coastal", "Mainland", "Desserts", "Beverages"];
 
@@ -101,11 +102,13 @@ export default function PopularDishesSection() {
               className="group bg-background rounded-xl overflow-hidden border border-border hover:shadow-lg transition-all duration-300"
             >
               <div className="relative h-64 overflow-hidden">
-                <img 
-                  src={dish.image} 
-                  alt={dish.name}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+                <Image
+                    src={dish.image}
+                    alt={dish.name}
+                    fill
+                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    className="object-cover h-full w-full transition-transform duration-500 group-hover:scale-105"
+                    />
                 {dish.popular && (
                   <Badge className="absolute top-4 right-4 bg-primary text-primary-foreground">
                     Popular

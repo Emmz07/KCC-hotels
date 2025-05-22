@@ -38,7 +38,7 @@ export default function PropertyCard() {
         <div className="mt-4 border-t-2 border-green-500 w-12"></div>
         
         <p className="font-inter text-gray-600 mt-6 leading-relaxed">
-          Immerse yourself in Colombia's natural beauty with a stay at Cristales River Trip, 
+          Immerse yourself in Colombia&apos;s natural beauty with a stay at Cristales River Trip, 
           near the vibrant Caño Cristales River.
         </p>
         

@@ -113,7 +113,7 @@ export function Booking() {
             Make a Booking Now!
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Whether you're traveling for business or leisure, our comfortable accommodations and excellent service will make your stay enjoyable and memorable.
+            Whether you&apos;re traveling for business or leisure, our comfortable accommodations and excellent service will make your stay enjoyable and memorable.
           </p>
         </div>
       </div>

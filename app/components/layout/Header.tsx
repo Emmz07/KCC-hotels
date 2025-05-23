@@ -52,8 +52,8 @@ export function Navbar() {
               className={cn(
                 "text-sm font-medium transition-colors text-white hover:text-lime-200",
                 pathname === item.href
-                  ? "text-lime-200"
-                  : "text-white"
+                  ? "text-white"
+                  : "text-lime-200"
               )}
             >
               {item.title}

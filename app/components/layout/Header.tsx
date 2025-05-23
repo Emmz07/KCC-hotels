@@ -32,14 +32,14 @@ export function Navbar() {
         ? "bg-background/80 backdrop-blur-md shadow-sm py-2" 
         : "bg-transparent py-4"
     )}>
-      <div className="container relative flex items-center justify-between ">
+      <div className="container mx-auto px-4 relative flex items-center justify-between ">
         <Link href="/" className="flex items-center gap-2">
             <Image
-            src="/KCC.png"
+            src="/KCCC.png"
             alt=""
             width={70}
             height={36}
-            className="h-8 w-16"
+            className="h-10 w-16"
             priority // Add this prop for LCP images above the fold
         />
         </Link>
@@ -50,17 +50,17 @@ export function Navbar() {
               key={item.href}
               href={item.href}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
+                "text-sm font-medium transition-colors text-white hover:text-lime-200",
                 pathname === item.href
-                  ? "text-primary"
-                  : "text-muted-foreground"
+                  ? "text-lime-200"
+                  : "text-white"
               )}
             >
               {item.title}
             </Link>
           ))}
           <ThemeToggle />
-          <Button size="sm" className="text-base text-sm border-yellow-500 bg-yellow-500 transition-colors duration-700 border-white hover:bg-white/20 hover:text-white">Book Now</Button>
+          <Button size="sm" className="text-base text-sm border-green-500 bg-green-400 transition-colors duration-700 border-white hover:bg-green-500 hover:text-white">Book Now</Button>
         </nav>
         
         <div className="flex items-center md:hidden">
@@ -103,7 +103,7 @@ export function Navbar() {
                   {item.title}
                 </Link>
               ))}
-              <Button className="w-full mt-4 text-base text-sm border-yellow-500 bg-yellow-500 transition-colors duration-700 border-white hover:bg-white/20 hover:text-white">Book Now</Button>
+              <Button className="w-full mt-4 text-base text-sm border-green-500 bg-green-400 transition-colors duration-700 border-white hover:bg-green-500 hover:text-white">Book Now</Button>
             </nav>
           </div>
         </div>

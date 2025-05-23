@@ -13,7 +13,7 @@ const Header: React.FC = () => {
       <h2 className="text-3xl md:text-4xl font-bold text-center text-black dark:text-white mb-3">
         Places to Visit
       </h2>
-      <div className="bg-amber-500 w-20 h-1 mx-auto mb-4"></div>
+      <div className="bg-lime-500 w-20 h-1 mx-auto mb-4"></div>
       <p className="max-w-3xl mx-auto text-gray-600 dark:text-gray-300 px-4">
         Get a holiday deal the whole family enjoy as you spend quality time at KCC Hotels, your home 
         away from home. Experience KCC Hotels and learn why it is a great destination for a family 

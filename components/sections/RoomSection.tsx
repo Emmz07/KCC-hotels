@@ -1,7 +1,5 @@
 import { AnimateIn } from '@/components/ui/animations';
 import { RoomCard, RoomProps } from '@/components/ui/room-card';
-import VideoSection from './sub-sections/VideoSection';
-import Link from 'next/link';
 
 const rooms: RoomProps[] = [
   {
@@ -36,9 +34,9 @@ const rooms: RoomProps[] = [
 export function RoomsSection() {
   return (
     <section id="rooms" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto sm:px-6 lg:px-8 px-4">
         <AnimateIn>
-            <p className='text-sm text-yellow-500 text-center mb-3'>Conscious Hospitality</p>
+            <p className='text-sm text-green-500 text-center mb-3'>Conscious Hospitality</p>
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
             Rooms & Suites
           </h2>
@@ -57,18 +55,7 @@ export function RoomsSection() {
           ))}
         </div>
 
-        <VideoSection />
 
-        <AnimateIn delay={0.3}>
-          <div className="text-center mt-12">
-            <Link 
-            href="/rooms" 
-            className="inline-block font-medium text-yellow-500 hover:text-primary/80 border-b-2 border-yellow-500 pb-1 transition-colors"
-            >
-            View All Rooms & Suites
-            </Link>
-          </div>
-        </AnimateIn>
       </div>
     </section>
   );

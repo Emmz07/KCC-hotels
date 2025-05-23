@@ -7,10 +7,8 @@ import { RoomsSection } from '@/components/sections/RoomSection';
 import { BlogSection } from '@/components/sections/BlogSection';
 import HeroCarousel from '@/components/sections/CarouselSection';
 import PropertyListing from '@/components/sections/ExclusiveSection';
-import { Booking } from '@/components/sections/BookingSection';
 import PlacesSection from '@/components/PlacesSection/PlacesSection';
 import TestimonialsSection from '@/components/sections/TestimonialSection';
-import GallerySection from '@/components/sections/GallerySection';
 import PopularDishesSection from './restaurant/RestaurantSection';
 
 export default function Home() {
@@ -47,10 +45,7 @@ export default function Home() {
       <BlogSection />
       <PropertyListing />
       <PopularDishesSection />
-      <TestimonialsSection />
-      <Booking />
-      <GallerySection />
-      
+      <TestimonialsSection />      
     </FadeIn>
   );
 }

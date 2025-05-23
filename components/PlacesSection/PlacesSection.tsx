@@ -1,5 +1,4 @@
 import React from 'react';
-import Carousel from './Carousel';
 import Header from './other/Header';
 import DestinationGrid from './other/DestinationGrid';
 import { destinations } from '@/data/destinations';
@@ -23,7 +22,6 @@ function PlacesSection() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
         >
-          <Carousel items={destinations} />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 40 }}

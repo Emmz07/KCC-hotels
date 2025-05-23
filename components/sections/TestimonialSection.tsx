@@ -90,7 +90,7 @@ export default function TestimonialsSection() {
                         />
                         </div>
                       <div>
-                        <h4 className="font-semibold text-yellow-500">{testimonial.author}</h4>
+                        <h4 className="font-semibold text-lime-500">{testimonial.author}</h4>
                         <p className="text-muted-foreground text-sm">{testimonial.role}</p>
                       </div>
                     </div>
@@ -108,7 +108,7 @@ export default function TestimonialsSection() {
                 className={cn(
                   "w-3 h-3 rounded-full transition-all duration-300",
                   index === activeIndex 
-                    ? "bg-yellow-500 w-6" 
+                    ? "bg-lime-500 w-6" 
                     : "bg-primary/30 hover:bg-primary/50"
                 )}
                 aria-label={`Go to testimonial ${index + 1}`}

@@ -44,8 +44,8 @@ const DestinationGrid: React.FC<DestinationGridProps> = ({ destinations }) => {
                 <h3 className="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-100">{destination.title}</h3>
                 <p className="text-gray-600 dark:text-gray-300 line-clamp-3 mb-4">{destination.description}</p>
                 <div className="flex justify-between items-center">
-                  <span className="text-sm text-amber-600">{destination.date}</span>
-                  <button className="text-amber-600 hover:text-amber-800 dark:hover:text-amber-400 font-medium transition-colors duration-300">
+                  <span className="text-sm text-lime-600">{destination.date}</span>
+                  <button className="text-lime-600 hover:text-lime-800 dark:hover:text-lime-400 font-medium transition-colors duration-300">
                     Read More →
                   </button>
                 </div>

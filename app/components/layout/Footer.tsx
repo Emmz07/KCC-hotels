@@ -7,7 +7,7 @@ import { navItems, socialLinks } from "@/lib/constants"
 export function Footer() {
   return (
     <footer className="bg-muted py-12 border-t px-12">
-      <div className="container grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <div className="container mx-auto px-4 relative flex items-center justify-between grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <div className="space-y-4">
           <div className="flex relative items-center gap-2">
             <Link href="/" className="flex items-center gap-2">
@@ -27,7 +27,7 @@ export function Footer() {
         </div>
         
         <div>
-          <h3 className="font-playfair text-lg font-semibold text-yellow-500 mb-4">Quick Links</h3>
+          <h3 className="font-playfair text-lg font-semibold text-lime-500 mb-4">Quick Links</h3>
           <ul className="space-y-2">
             {navItems.map((item) => (
               <li key={item.href}>
@@ -43,7 +43,7 @@ export function Footer() {
         </div>
         
         <div>
-          <h3 className="font-playfair text-lg font-semibold text-yellow-500 mb-4">Contact Us</h3>
+          <h3 className="font-playfair text-lg font-semibold text-lime-500 mb-4">Contact Us</h3>
           <address className="not-italic space-y-2">
             <p className="text-sm text-muted-foreground">123 Hotel Street</p>
             <p className="text-sm text-muted-foreground">Nairobi, Kenya</p>
@@ -66,20 +66,20 @@ export function Footer() {
         </div>
         
         <div>
-          <h3 className="font-playfair text-lg text-yellow-500 font-semibold mb-4">Newsletter</h3>
+          <h3 className="font-playfair text-lg text-lime-500 font-semibold mb-4">Newsletter</h3>
           <p className="text-sm text-muted-foreground mb-4">
             Subscribe to our newsletter for special deals and updates.
           </p>
           <div className="flex gap-2">
             <Input id="footer-form" placeholder="Your email" className="max-w-[220px]" />
-            <Button type="submit" className="text-base text-sm border-yellow-500 bg-yellow-500 transition-colors duration-700 border-white hover:bg-white/20 hover:text-white" size="sm">
+            <Button type="submit" className="text-base text-sm border-lime-500 bg-lime-500 transition-colors duration-700 border-white hover:bg-white/20 hover:text-white" size="sm">
               Subscribe
             </Button>
           </div>
         </div>
       </div>
       
-      <div className="container mt-8 pt-8 border-t">
+      <div className="container mt-8 pt-8 border-t container mx-auto px-4 relative flex items-center justify-between">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} KCC Hotel. All rights reserved.

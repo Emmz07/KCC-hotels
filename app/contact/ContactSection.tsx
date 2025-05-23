@@ -7,7 +7,7 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 export function ContactSection() {
   return (
-    <section id="contact" className="py-20 bg-background">
+    <section id="contact" className="py-20 bg-background mt-9">
       <div className="container mx-auto px-4">
         <AnimateIn>
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">

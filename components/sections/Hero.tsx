@@ -1,9 +1,9 @@
 'use client';
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { ArrowDownCircle, ArrowUpCircle } from 'lucide-react';
+import { Booking } from './BookingSection';
 
 
 
@@ -57,8 +57,8 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <p className="text-sm md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            A perfect hide out from the hassles of the city life and work In a welcoming atmosphere of serenity, tranquility and relaxation<br /> KCC Hotel offers it all...
+          <p className="text-sm md:text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+            A perfect hide out from the hassles of the city life and work In a welcoming atmosphere of serenity, tranquility and relaxation.
           </p>
         </motion.div>
 
@@ -69,12 +69,7 @@ export function HeroSection() {
           className="flex flex-col sm:flex-row justify-center gap-4"
         >
           
-          <Button size="lg" className="text-base bg-yellow-500">
-            Book Now
-          </Button>
-          <Button size="lg" variant="outline" className="text-base border-yellow-500 text-yellow-500 hover:bg-yellow-500 transition-colors duration-700 border-white hover:bg-white/20 hover:text-white">
-            Explore Rooms
-          </Button>
+          <Booking />
         </motion.div>
       </div>
 

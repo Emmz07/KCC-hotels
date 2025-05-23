@@ -46,7 +46,7 @@ const blogPosts: BlogPost[] = [
 export function BlogSection() {
   return (
     <section id="blog" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateIn>
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
             Our Blog
@@ -95,7 +95,7 @@ export function BlogSection() {
           <div className="text-center mt-12">
             <Link 
               href="#" 
-              className="inline-block bg-primary text-primary-foreground px-6 py-3 rounded-md hover:bg-primary/90 transition-colors"
+              className="inline-block text-base text-black font-bold text-sm border-green-500 bg-green-400 transition-colors duration-700 border-white hover:bg-green-500 hover:text-white px-6 py-3 rounded-md"
             >
               View All Posts
             </Link>

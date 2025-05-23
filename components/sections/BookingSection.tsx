@@ -15,9 +15,9 @@ import { Card, CardContent } from "@/components/ui/card"
 export function Booking() {
   const [checkIn, setCheckIn] = useState<Date>()
   const [checkOut, setCheckOut] = useState<Date>()
-  
+
   return (
-    <section className="py-16 bg-primary/5">
+    <section className="py-16">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -25,17 +25,19 @@ export function Booking() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <Card className="border-none shadow-lg max-w-4xl mx-auto">
+          <Card className="border-none shadow-lg bg-white bg-black/40 max-w-4xl mx-auto text-black dark:text-white">
             <CardContent className="p-6">
               <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-4">
+                
+                {/* Check-in */}
                 <div className="space-y-2">
-                  <label className="text-sm font-medium">Check-in</label>
+                  <label className="text-sm font-medium text-white">Check-in</label>
                   <Popover>
                     <PopoverTrigger asChild>
                       <Button
                         variant="outline"
                         className={cn(
-                          "w-full justify-start text-left font-normal",
+                          "w-full justify-start text-left font-normal bg-white dark:bg-neutral-900 dark:text-white",
                           !checkIn && "text-muted-foreground"
                         )}
                       >
@@ -54,15 +56,16 @@ export function Booking() {
                     </PopoverContent>
                   </Popover>
                 </div>
-                
+
+                {/* Check-out */}
                 <div className="space-y-2">
-                  <label className="text-sm font-medium">Check-out</label>
+                  <label className="text-sm font-medium text-white">Check-out</label>
                   <Popover>
                     <PopoverTrigger asChild>
                       <Button
                         variant="outline"
                         className={cn(
-                          "w-full justify-start text-left font-normal",
+                          "w-full justify-start text-left font-normal bg-white dark:bg-neutral-900 dark:text-white",
                           !checkOut && "text-muted-foreground"
                         )}
                       >
@@ -81,11 +84,12 @@ export function Booking() {
                     </PopoverContent>
                   </Popover>
                 </div>
-                
+
+                {/* Guests */}
                 <div className="space-y-2">
-                  <label className="text-sm font-medium">Guests</label>
+                  <label className="text-sm font-medium text-white">Guests</label>
                   <Select>
-                    <SelectTrigger>
+                    <SelectTrigger className="bg-white dark:bg-neutral-900 dark:text-white">
                       <SelectValue placeholder="Select guests" />
                     </SelectTrigger>
                     <SelectContent>
@@ -97,25 +101,18 @@ export function Booking() {
                     </SelectContent>
                   </Select>
                 </div>
-                
+
+                {/* Button */}
                 <div className="flex items-end">
-                  <Button className="w-full text-base text-sm border-yellow-500 bg-yellow-500 transition-colors duration-700 border-white hover:bg-white/20 hover:text-white">
+                  <Button className="w-full text-base text-sm border-green-500 bg-green-400 transition-colors duration-700 border-white hover:bg-green-500 hover:text-white">
                     Check Availability
                   </Button>
                 </div>
+
               </div>
             </CardContent>
           </Card>
         </motion.div>
-        
-        <div className="mt-16 text-center">
-          <h2 className="font-playfair text-3xl font-bold mb-4">
-            Make a Booking Now!
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Whether you&apos;re traveling for business or leisure, our comfortable accommodations and excellent service will make your stay enjoyable and memorable.
-          </p>
-        </div>
       </div>
     </section>
   )

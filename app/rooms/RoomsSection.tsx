@@ -69,7 +69,7 @@ const rooms: RoomProps[] = [
 
 export function RoomsSection() {
   return (
-    <section id="rooms" className="py-20 bg-muted/30 mt-8">
+    <section id="rooms" className="py-20 bg-muted/30 mt-9">
       <div className="container mx-auto px-4">
         <AnimateIn>     
           <h2 className="text-3xl md:text-4xl font-semibold text-center mb-3">

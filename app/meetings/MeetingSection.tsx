@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 export function MeetingsSection() {
   return (
-    <section id="meetings" className="py-20 bg-muted/30">
+    <section id="meetings" className="py-20 bg-muted/30 mt-9">
       <div className="container mx-auto px-4">
         <AnimateIn>
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
@@ -22,7 +22,7 @@ export function MeetingsSection() {
             <div className="bg-background rounded-lg overflow-hidden shadow-md">
               <div className="relative h-64">
                 <Image
-                  src="https://images.pexels.com/photos/159823/meeting-modern-company-conference-159823.jpeg"
+                  src="https://images.pexels.com/photos/159213/hall-congress-architecture-building-159213.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="Conference Room"
                   fill
                   className="object-cover"
@@ -92,7 +92,7 @@ export function MeetingsSection() {
                   will ensure your event is a success. All spaces include high-speed Wi-Fi, audiovisual equipment, 
                   and customizable catering options.
                 </p>
-                <Button>Request a Proposal</Button>
+                <Button className='text-base text-sm border-green-500 bg-green-400 transition-colors duration-700 border-white hover:bg-green-500 hover:text-white'>Request a Proposal</Button>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-muted/40 p-4 rounded-lg text-center">

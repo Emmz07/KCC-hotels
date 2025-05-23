@@ -92,7 +92,7 @@ const HeroCarousel = () => {
                 </p>
                 <Button  
                   size="lg"
-                  className="rounded-full px-8 py-6 font-medium bg-yellow-500 hover:bg-yellow-400 text-black shadow-lg transition-colors duration-300"
+                  className="rounded-full px-8 py-6 font-medium text-base text-sm border-green-500 bg-green-400 transition-colors duration-700 border-white hover:bg-green-500 hover:text-white"
                 >
                   View Prices
                 </Button>
@@ -128,7 +128,7 @@ const HeroCarousel = () => {
             onClick={() => scrollTo(index)}
             className={cn(
               "w-2 h-2 rounded-full transition-all duration-300",
-              index === selectedIndex ? "w-8 bg-yellow-500" : "bg-white/50 hover:bg-white/80"
+              index === selectedIndex ? "w-8 bg-lime-500" : "bg-white/50 hover:bg-white/80"
             )}
             aria-label={`Go to slide ${index + 1}`}
           />

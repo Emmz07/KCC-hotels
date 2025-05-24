@@ -16,11 +16,11 @@ export const navItems: NavItem[] = [
     href: "/rooms",
   },
   {
-    title: "Restaurant & Bar",
+    title: "Restaurant",
     href: "/restaurant",
   },
   {
-    title: "Meetings & Training",
+    title: "Meetings",
     href: "/meetings",
   },
   {

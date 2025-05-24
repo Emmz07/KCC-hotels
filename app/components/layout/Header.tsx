@@ -33,7 +33,7 @@ export function Navbar() {
         : "bg-transparent py-4"
     )}>
       <div className="container mx-auto px-4 relative flex items-center justify-between ">
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2 mr-2">
             <Image
             src="/KCCC.png"
             alt=""

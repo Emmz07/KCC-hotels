@@ -41,7 +41,7 @@ export function HeroSection() {
       </div>
 
       {/* Hero Content */}
-      <div className="container px-4 mx-auto relative z-10 text-center">
+      <div className="container px-4 mx-auto relative z-10 text-center max-sm:mt-10 sm:mt-20 sm:pt-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

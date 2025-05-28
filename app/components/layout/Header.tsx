@@ -8,7 +8,6 @@ import { cn } from "@/lib/utils"
 import { navItems } from "@/lib/constants"
 import { ThemeToggle } from "../theme/ThemeToggle"
 import { Button } from "@/components/ui/button"
-import { BedDouble } from "lucide-react"
 import Image from "next/image"
 
 export function Navbar() {

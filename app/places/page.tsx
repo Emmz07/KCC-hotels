@@ -1,52 +1,51 @@
+'use client';
+
 import React, { useState, useEffect, useCallback } from 'react';
-import CarouselItem from './CarouselItem';
-import CarouselControls from './CarouselControls';
-import { Destination } from '../../types/destination';
+import CarouselItem from '@/components/PlacesSection/CarouselItem';
+import CarouselControls from '@/components/PlacesSection/CarouselControls';
+import { Destination } from '@/types/destination';
 
 interface CarouselProps {
-  items: Destination[];
+  items?: Destination[];
   autoPlay?: boolean;
   interval?: number;
 }
 
-const Carousel: React.FC<CarouselProps> = ({ 
-  items, 
-  autoPlay = true, 
-  interval = 5000 
+const Carousel: React.FC<CarouselProps> = ({
+  items = [],
+  autoPlay = true,
+  interval = 5000
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(autoPlay);
 
   const nextSlide = useCallback(() => {
+    if (items.length === 0) return;
     setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-  }, [items.length]);
+  }, [items]);
 
   const prevSlide = useCallback(() => {
-    setCurrentIndex((prevIndex) => 
+    if (items.length === 0) return;
+    setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? items.length - 1 : prevIndex - 1
     );
-  }, [items.length]);
+  }, [items]);
 
   const goToSlide = useCallback((index: number) => {
+    if (items.length === 0) return;
     setCurrentIndex(index);
-  }, []);
+  }, [items]);
 
-  // Handle autoplay
   useEffect(() => {
-    let intervalId: number | undefined;
-    
-    if (isAutoPlaying) {
-      intervalId = window.setInterval(() => {
-        nextSlide();
-      }, interval);
-    }
-    
-    return () => {
-      if (intervalId) clearInterval(intervalId);
-    };
-  }, [isAutoPlaying, nextSlide, interval]);
+    if (!isAutoPlaying || items.length === 0) return;
 
-  // Pause autoplay on hover
+    const intervalId = window.setInterval(() => {
+      nextSlide();
+    }, interval);
+
+    return () => clearInterval(intervalId);
+  }, [isAutoPlaying, nextSlide, interval, items]);
+
   const handleMouseEnter = () => {
     setIsAutoPlaying(false);
   };
@@ -55,25 +54,27 @@ const Carousel: React.FC<CarouselProps> = ({
     setIsAutoPlaying(autoPlay);
   };
 
+  if (items.length === 0) {
+    return <div className="text-center p-4">No items to display.</div>;
+  }
+
   return (
-    <div 
+    <div
       className="relative h-[500px] md:h-[600px] overflow-hidden rounded-lg shadow-xl"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      {/* Carousel Items */}
       <div className="relative w-full h-full">
         {items.map((item, index) => (
-          <CarouselItem 
-            key={item.id} 
-            destination={item} 
-            active={index === currentIndex} 
+          <CarouselItem
+            key={item.id}
+            destination={item}
+            active={index === currentIndex}
           />
         ))}
       </div>
 
-      {/* Carousel Controls */}
-      <CarouselControls 
+      <CarouselControls
         total={items.length}
         currentIndex={currentIndex}
         onPrev={prevSlide}
@@ -84,4 +85,4 @@ const Carousel: React.FC<CarouselProps> = ({
   );
 };
 
-export default Carousel
+export default Carousel;

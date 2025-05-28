@@ -22,7 +22,7 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen min-h-[600px] flex  pt-7 items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <video
@@ -47,8 +47,8 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-yellow-100 mb-4">
-            Experience <span className='text-green-500'>Luxury</span> <br /> Like Never Before
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-lime-100 mb-4">
+            Experience <span className='text-lime-500'>Luxury</span> <br /> Like Never Before
           </h1>
         </motion.div>
 
@@ -57,20 +57,12 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <p className="text-sm md:text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            A perfect hide out from the hassles of the city life and work In a welcoming atmosphere of serenity, tranquility and relaxation.
+          <p className="text-sm md:text-lg text-white/90 mb-8 max-w-xl mx-auto">
+            A perfect hide out from the hassles of the city life and work In a welcoming atmosphere of relaxation.
           </p>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row justify-center gap-4"
-        >
-          
-          <Booking />
-        </motion.div>
+        <Booking />
       </div>
 
       {/* Scroll Down Indicator */}
@@ -92,16 +84,16 @@ export function HeroSection() {
             }
         }}
         >
-        <ArrowDownCircle className="h-10 w-10 text-yellow-100 group-hover:text-yellow-500 transition-colors duration-300 animate-bounce" />
+        <ArrowDownCircle className="h-10 w-10 text-lime-100 group-hover:text-lime-500 transition-colors duration-300 animate-bounce" />
         </motion.div>
          {/* Sticky Back to Top Button */}
         {showTop && (
         <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className="fixed bottom-8 right-8 z-50 bg-yellow-500/20 hover:bg-yellow-400/40 text-white rounded-full p-3 shadow-lg transition-all duration-300 flex items-center group backdrop-blur"
+        className="fixed bottom-8 right-8 z-50 bg-lime-500/20 hover:bg-lime-400/40 text-white rounded-full p-3 shadow-lg transition-all duration-300 flex items-center group backdrop-blur"
         aria-label="Back to top"
         >
-        <ArrowUpCircle className="h-8 w-8 text-white group-hover:text-yellow-700 transition-colors duration-300" />
+        <ArrowUpCircle className="h-8 w-8 text-white group-hover:text-lime-700 transition-colors duration-300" />
         </button>
       )}
     </section>

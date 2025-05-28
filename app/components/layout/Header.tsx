@@ -35,11 +35,11 @@ export function Navbar() {
       <div className="container mx-auto px-4 relative flex items-center justify-between ">
         <Link href="/" className="flex items-center gap-2 mr-2">
             <Image
-            src="/KCCC.png"
+            src="/KCCH.png"
             alt=""
-            width={70}
+            width={100}
             height={36}
-            className="h-10 w-16"
+            className="h-6 w-18"
             priority // Add this prop for LCP images above the fold
         />
         </Link>
@@ -60,13 +60,13 @@ export function Navbar() {
             </Link>
           ))}
           <ThemeToggle />
-          <Button size="sm" className="text-base text-sm border-green-500 bg-green-400 transition-colors duration-700 border-white hover:bg-green-500 hover:text-white">Book Now</Button>
+          <Button size="sm" className="text-base text-sm border-lime-500 bg-lime-400 transition-colors duration-700 border-white hover:bg-lime-500 hover:text-white">Book Now</Button>
         </nav>
         
         <div className="flex items-center md:hidden">
           <ThemeToggle />
           <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)}>
-            <Menu className="h-6 w-6" />
+            <Menu className="h-6 w-6 text-white bg-black/40 rounded" />
             <span className="sr-only">Toggle menu</span>
           </Button>
         </div>
@@ -74,15 +74,21 @@ export function Navbar() {
       
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 bg-background/95 backdrop-blur-sm md:hidden">
+        <div className="fixed  z-100 bg-white dark:bg-black dark:text-white md:hidden">
           <div className="container h-full flex flex-col">
             <div className="flex items-center justify-between py-4 px-8">
-              <Link href="/" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
-                <BedDouble className="h-8 w-8 text-primary" />
-                <span className="font-playfair text-xl font-bold">KCC Hotel</span>
+              <Link href="/" className="flex items-center gap-2 mr-2">
+                <Image
+                  src="/KCCH.png"
+                  alt=""
+                  width={100}
+                  height={36}
+                  className="h-6 w-18"
+                  priority // Add this prop for LCP images above the fold
+                />
               </Link>
-              <Button variant="ghost"  size="icon" onClick={() => setIsOpen(false)}>
-                <X className="h-6 w-6 text-yellow-400" />
+              <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
+                <X className="h-6 w-6 text-lime-400" />
                 <span className="sr-only">Close menu</span>
               </Button>
             </div>
@@ -93,7 +99,7 @@ export function Navbar() {
                   key={item.href}
                   href={item.href}
                   className={cn(
-                    "text-lg font-medium transition-colors hover:text-yellow-100",
+                    "text-lg font-medium transition-colors hover:text-lime-500",
                     pathname === item.href
                       ? "text-primary"
                       : "text-muted-foreground"
@@ -103,7 +109,7 @@ export function Navbar() {
                   {item.title}
                 </Link>
               ))}
-              <Button className="w-full mt-4 text-base text-sm border-green-500 bg-green-400 transition-colors duration-700 border-white hover:bg-green-500 hover:text-white">Book Now</Button>
+              <Button className="w-full mt-4 mb-4 text-base text-sm border-lime-500 bg-lime-400 transition-colors duration-700 border-white hover:bg-lime-500 hover:text-white">Book Now</Button>
             </nav>
           </div>
         </div>

@@ -17,8 +17,8 @@ export function Booking() {
   const [checkOut, setCheckOut] = useState<Date>()
 
   return (
-    <section className="py-16">
-      <div className="container">
+    <section className="">
+      <div className="">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -87,7 +87,7 @@ export function Booking() {
 
                 {/* Guests */}
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-white">Guests</label>
+                  <label className="text-sm font-medium text-white ">Guests</label>
                   <Select>
                     <SelectTrigger className="bg-white dark:bg-neutral-900 dark:text-white">
                       <SelectValue placeholder="Select guests" />
@@ -104,7 +104,7 @@ export function Booking() {
 
                 {/* Button */}
                 <div className="flex items-end">
-                  <Button className="w-full text-base text-sm border-green-500 bg-green-400 transition-colors duration-700 border-white hover:bg-green-500 hover:text-white">
+                  <Button className="w-full text-base text-sm border-lime-500 bg-lime-400 transition-colors duration-700 border-white hover:bg-lime-500 hover:text-white">
                     Check Availability
                   </Button>
                 </div>

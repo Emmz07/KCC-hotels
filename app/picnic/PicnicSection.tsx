@@ -10,7 +10,7 @@ export function PicnicSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
             Picnic & Outdoor Events
           </h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-12"></div>
+          <div className="w-20 h-1 bg-lime-500 mx-auto mb-12"></div>
         </AnimateIn>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -71,7 +71,7 @@ export function PicnicSection() {
                 </div>
               </div>
 
-              <Button className="mt-2 text-base text-sm border-green-500 bg-green-400 transition-colors duration-700 border-white hover:bg-green-500 hover:text-white">Book an Outdoor Event</Button>
+              <Button className="mt-2 text-base text-sm border-lime-500 bg-lime-400 transition-colors duration-700 border-white hover:bg-lime-500 hover:text-white">Book an Outdoor Event</Button>
             </div>
           </AnimateIn>
         </div>

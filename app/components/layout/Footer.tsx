@@ -45,12 +45,12 @@ export function Footer() {
         <div>
           <h3 className="font-playfair text-lg font-semibold text-lime-500 mb-4">Contact Us</h3>
           <address className="not-italic space-y-2">
-            <p className="text-sm text-muted-foreground">123 Hotel Street</p>
-            <p className="text-sm text-muted-foreground">Nairobi, Kenya</p>
-            <p className="text-sm text-muted-foreground">+254 123 456 789</p>
+            <p className="text-sm text-muted-foreground">P.O. Box 30858, Kibaha, Maili Moja</p>
+            <p className="text-sm text-muted-foreground">Pwani, Tanzania</p>
+            <p className="text-sm text-muted-foreground">+255 232 402 644, +255 754 657 202</p>
             <p className="text-sm text-muted-foreground">info@kcchotel.com</p>
           </address>
-          
+
           <div className="flex gap-4 mt-4">
             {socialLinks.map((link) => (
               <Link

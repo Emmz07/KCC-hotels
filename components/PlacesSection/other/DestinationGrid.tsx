@@ -1,7 +1,10 @@
+'use'
+
 import React from 'react';
 import { Destination } from '@/types/destination';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface DestinationGridProps {
   destinations: Destination[];
@@ -45,10 +48,10 @@ const DestinationGrid: React.FC<DestinationGridProps> = ({ destinations }) => {
                 <p className="text-gray-600 dark:text-gray-300 line-clamp-3 mb-4">{destination.description}</p>
                 <div className="flex justify-between items-center">
                   <span className="text-sm text-lime-600">{destination.date}</span>
-                  <button className="text-lime-600 hover:text-lime-800 dark:hover:text-lime-400 font-medium transition-colors duration-300">
-                    Read More →
-                  </button>
-                </div>
+                  <Link href="/places" className="text-lime-600 hover:text-lime-800 dark:hover:text-lime-400 font-medium transition-colors duration-300">
+                  Read More →
+                 </Link>
+                </div> 
               </div>
             </div>
           </motion.div>

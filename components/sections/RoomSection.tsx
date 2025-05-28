@@ -36,7 +36,7 @@ export function RoomsSection() {
     <section id="rooms" className="py-20 bg-muted/30">
       <div className="container mx-auto sm:px-6 lg:px-8 px-4">
         <AnimateIn>
-            <p className='text-sm text-green-500 text-center mb-3'>Conscious Hospitality</p>
+            <p className='text-sm text-lime-500 text-center mb-3'>Conscious Hospitality</p>
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
             Rooms & Suites
           </h2>

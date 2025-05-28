@@ -69,7 +69,7 @@ export function BlogSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
             Our Blog
           </h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-4"></div>
+          <div className="w-20 h-1 bg-lime-500 mx-auto mb-4"></div>
           <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
             Insights, stories, and tips from the world of luxury hospitality. Stay updated with the latest trends
             and happenings at KCC Hotels.
@@ -99,7 +99,7 @@ export function BlogSection() {
                   <p className="text-muted-foreground text-sm mb-4 flex-grow">{post.excerpt}</p>
                   <Link 
                     href="#" 
-                    className="inline-flex items-center text-primary hover:text-primary/80 font-medium text-sm mt-auto"
+                    className="inline-flex items-center text-lime-600 hover:text-lime-500 font-medium text-sm mt-auto"
                   >
                     Read More <ArrowRight className="ml-1 h-4 w-4" />
                   </Link>

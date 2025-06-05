@@ -5,7 +5,7 @@ const Description: React.FC = () => {
     <div className="bg-white dark:bg-black/40 rounded-lg shadow-md p-6 overflow-hidden border">
       <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">Description</h2>
       <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-        Our Deluxe Double Room offers a perfect blend of comfort and luxury, featuring a spacious layout, modern amenities, and elegant decor. Enjoy a restful night's sleep on our plush king-size bed, and take advantage of the in-room facilities designed to make your stay as enjoyable as possible.
+        Our Deluxe Double Room offers a perfect blend of comfort and luxury, featuring a spacious layout, modern amenities, and elegant decor. Enjoy a restful night sleep on our plush king-size bed, and take advantage of the in-room facilities designed to make your stay as enjoyable as possible.
       </p>
     </div>
   );

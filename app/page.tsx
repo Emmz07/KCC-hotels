@@ -10,6 +10,7 @@ import PropertyListing from '@/components/sections/ExclusiveSection';
 import PlacesSection from '@/components/PlacesSection/PlacesSection';
 import TestimonialsSection from '@/components/sections/TestimonialSection';
 import PopularDishesSection from './restaurant/RestaurantSection';
+import { Booking } from '@/components/sections/BookingSection';
 
 export default function Home() {
   // Smooth scroll implementation
@@ -39,6 +40,7 @@ export default function Home() {
   return (
     <FadeIn>
       <HeroSection />
+      <Booking />
       <RoomsSection />
       <HeroCarousel />
       <PlacesSection />

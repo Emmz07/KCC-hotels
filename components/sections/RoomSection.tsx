@@ -4,7 +4,7 @@ import { RoomCard, RoomProps } from '@/components/ui/room-card';
 const rooms: RoomProps[] = [
   {
     id: '1',
-    name: 'Deluxe King Room',
+    name: 'Deluxe Single',
     description: 'Spacious room with king-sized bed, featuring modern amenities and a stunning city view.',
     price: 199,
     capacity: 2,
@@ -13,7 +13,7 @@ const rooms: RoomProps[] = [
   },
   {
     id: '2',
-    name: 'Premium Suite',
+    name: 'Deluxe Double',
     description: 'Luxurious suite with separate living area, premium furnishings, and panoramic views.',
     price: 349,
     capacity: 3,
@@ -22,7 +22,7 @@ const rooms: RoomProps[] = [
   },
   {
     id: '3',
-    name: 'Family Room',
+    name: 'Deluxe With Balcony',
     description: 'Comfortable room designed for families, with multiple beds and a cozy seating area.',
     price: 279,
     capacity: 4,
@@ -33,14 +33,14 @@ const rooms: RoomProps[] = [
 
 export function RoomsSection() {
   return (
-    <section id="rooms" className="py-20 bg-muted/30">
+    <section id="rooms" className="py-20 pt-4 dark:bg-black">
       <div className="container mx-auto sm:px-6 lg:px-8 px-4">
         <AnimateIn>
-            <p className='text-sm text-lime-500 text-center mb-3'>Conscious Hospitality</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
+          <p className='text-sm text-[color:var(--greenish)] text-center mb-3'>Conscious Hospitality</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-center dark:text-white mb-3">
             Rooms & Suites
           </h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-9"></div>
+          <div className="w-20 h-1 bg-[color:var(--greenish)] mx-auto mb-9"></div>
           <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
             Experience the perfect blend of comfort and luxury in our thoughtfully designed rooms and suites. 
             Each space is crafted to ensure a memorable stay.
@@ -54,8 +54,6 @@ export function RoomsSection() {
             </AnimateIn>
           ))}
         </div>
-
-
       </div>
     </section>
   );

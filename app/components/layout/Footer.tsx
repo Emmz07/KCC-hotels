@@ -21,13 +21,13 @@ export function Footer() {
           />
         </Link>
           </div>
-          <p className="text-muted-foreground text-sm max-w-xs">
+          <p className="text-[color:var(--greenish)] text-sm max-w-xs">
             A perfect blend of comfort, luxury, and service in a captivating atmosphere of warmth, hospitality, and tradition.
           </p>
         </div>
         
         <div>
-          <h3 className="font-playfair text-lg font-semibold text-lime-500 mb-4">Quick Links</h3>
+          <h3 className="font-playfair text-lg font-semibold text-[color:var(--greenish)] mb-4">Quick Links</h3>
           <ul className="space-y-2">
             {navItems.map((item) => (
               <li key={item.href}>
@@ -43,7 +43,7 @@ export function Footer() {
         </div>
         
         <div>
-          <h3 className="font-playfair text-lg font-semibold text-lime-500 mb-4">Contact Us</h3>
+          <h3 className="font-playfair text-lg font-semibold text-[color:var(--greenish)] mb-4">Contact Us</h3>
           <address className="not-italic space-y-2">
             <p className="text-sm text-muted-foreground">P.O. Box 30858, Kibaha, Maili Moja</p>
             <p className="text-sm text-muted-foreground">Pwani, Tanzania</p>
@@ -66,13 +66,13 @@ export function Footer() {
         </div>
         
         <div>
-          <h3 className="font-playfair text-lg text-lime-500 font-semibold mb-4">Newsletter</h3>
+          <h3 className="font-playfair text-lg text-[color:var(--greenish)] font-semibold mb-4">Newsletter</h3>
           <p className="text-sm text-muted-foreground mb-4">
             Subscribe to our newsletter for special deals and updates.
           </p>
           <div className="flex gap-2">
             <Input id="footer-form" placeholder="Your email" className="max-w-[220px]" />
-            <Button type="submit" className="text-base text-sm border-lime-500 bg-lime-500 transition-colors duration-700 border-white hover:bg-white/20 hover:text-white" size="sm">
+            <Button type="submit" className="text-base text-sm border-[color:var(--greenish)] bg-[color:var(--greenish)] transition-colors duration-700 border-white hover:bg-[color:var(--limeish)] hover:text-black" size="sm">
               Subscribe
             </Button>
           </div>

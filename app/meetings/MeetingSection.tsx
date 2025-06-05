@@ -10,7 +10,7 @@ export function MeetingsSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
             Meetings & Training
           </h2>
-          <div className="w-20 h-1 bg-lime-500 mx-auto mb-4"></div>
+          <div className="w-20 h-1 bg-[color:var(--greenish)] mx-auto mb-4"></div>
           <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
             Sophisticated spaces designed for productive business meetings, conferences, and training sessions, 
             equipped with cutting-edge technology and supported by our attentive staff.
@@ -34,7 +34,7 @@ export function MeetingsSection() {
                   Large, versatile space ideal for conferences, seminars, and large meetings. 
                   Accommodates up to 100 guests with flexible seating arrangements.
                 </p>
-                <Button variant="outline" className="w-full">View Details</Button>
+                <Button variant="outline" className="w-full">Book Now</Button>
               </div>
             </div>
           </AnimateIn>
@@ -55,7 +55,7 @@ export function MeetingsSection() {
                   Elegant boardroom with premium furnishings, perfect for high-level meetings and 
                   executive discussions. Seats up to 20 people comfortably.
                 </p>
-                <Button variant="outline" className="w-full">View Details</Button>
+                <Button variant="outline" className="w-full">Book Now</Button>
               </div>
             </div>
           </AnimateIn>
@@ -76,7 +76,7 @@ export function MeetingsSection() {
                   Modern training space with interactive technology, ideal for workshops and 
                   educational sessions. Configured for up to 50 participants.
                 </p>
-                <Button variant="outline" className="w-full">View Details</Button>
+                <Button variant="outline" className="w-full">Book Now</Button>
               </div>
             </div>
           </AnimateIn>
@@ -92,7 +92,7 @@ export function MeetingsSection() {
                   will ensure your event is a success. All spaces include high-speed Wi-Fi, audiovisual equipment, 
                   and customizable catering options.
                 </p>
-                <Button className='text-base text-sm border-lime-500 bg-lime-400 transition-colors duration-700 border-white hover:bg-lime-500 hover:text-white'>Request a Proposal</Button>
+                <Button className='text-base text-sm border-[color:var(--greenish)] bg-[color:var(--greenish)] transition-colors duration-700 border-white hover:bg-[color:var(--limeish)] hover:text-black'>Request a Proposal</Button>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-muted/40 p-4 rounded-lg text-center">

@@ -6,28 +6,28 @@ import { format } from "date-fns"
 import { motion } from "framer-motion"
 
 import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { Calendar } from "@/components/ui/calendar"
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "../ui/button"
+import { Calendar } from "../ui/calendar"
+import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../ui/select"
+import { Card, CardContent } from "../ui/card"
 
 export function Booking() {
   const [checkIn, setCheckIn] = useState<Date>()
   const [checkOut, setCheckOut] = useState<Date>()
 
   return (
-    <section className="">
-      <div className="">
+    <section className="relative z-20 container mx-auto px-4">
+      <div className="transform -translate-y-24 md:-translate-y-28">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <Card className="border-none shadow-lg bg-white bg-black/40 max-w-4xl mx-auto text-black dark:text-white">
-            <CardContent className="p-6">
-              <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-4">
+          <Card className="border-none shadow-xl bg-white/20 backdrop-blur-md max-w-4xl mx-auto text-black dark:text-white">
+            <CardContent className="p-4 md:p-6">
+              <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
                 
                 {/* Check-in */}
                 <div className="space-y-2">
@@ -37,7 +37,7 @@ export function Booking() {
                       <Button
                         variant="outline"
                         className={cn(
-                          "w-full justify-start text-left font-normal bg-white dark:bg-neutral-900 dark:text-white",
+                          "w-full justify-start text-left font-normal bg-white/90 dark:bg-neutral-900/90 dark:text-white hover:bg-white",
                           !checkIn && "text-muted-foreground"
                         )}
                       >
@@ -65,7 +65,7 @@ export function Booking() {
                       <Button
                         variant="outline"
                         className={cn(
-                          "w-full justify-start text-left font-normal bg-white dark:bg-neutral-900 dark:text-white",
+                          "w-full justify-start text-left font-normal bg-white/90 dark:bg-neutral-900/90 dark:text-white hover:bg-white",
                           !checkOut && "text-muted-foreground"
                         )}
                       >
@@ -87,9 +87,9 @@ export function Booking() {
 
                 {/* Guests */}
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-white ">Guests</label>
+                  <label className="text-sm font-medium text-white">Guests</label>
                   <Select>
-                    <SelectTrigger className="bg-white dark:bg-neutral-900 dark:text-white">
+                    <SelectTrigger className="bg-white/90 dark:bg-neutral-900/90 dark:text-white hover:bg-white">
                       <SelectValue placeholder="Select guests" />
                     </SelectTrigger>
                     <SelectContent>
@@ -104,11 +104,10 @@ export function Booking() {
 
                 {/* Button */}
                 <div className="flex items-end">
-                  <Button className="w-full text-base text-sm border-lime-500 bg-lime-400 transition-colors duration-700 border-white hover:bg-lime-500 hover:text-white">
+                  <Button className="w-full text-white font-medium bg-[color:var(--greenish)] text-black border border-[color:var(--greenish)] transition-all duration-300 hover:bg-[color:var(--limeish)] hover:border-[color:var(--limeish)] hover:text-white">
                     Check Availability
                   </Button>
                 </div>
-
               </div>
             </CardContent>
           </Card>

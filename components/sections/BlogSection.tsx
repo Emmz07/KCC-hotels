@@ -51,7 +51,7 @@ export function BlogSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
             Our Blog
           </h2>
-          <div className="w-20 h-1 bg-lime-500 mx-auto mb-4"></div>
+          <div className="w-20 h-1 bg-[color:var(--greenish)] mx-auto mb-4"></div>
           <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
             Insights, stories, and tips from the world of luxury hospitality. Stay updated with the latest trends
             and happenings at KCC Hotels.
@@ -95,7 +95,7 @@ export function BlogSection() {
           <div className="text-center mt-12">
             <Link 
               href="#" 
-              className="inline-block text-base text-black font-bold text-sm border-lime-500 bg-lime-400 transition-colors duration-700 border-white hover:bg-lime-500 hover:text-white px-6 py-3 rounded-md"
+              className="inline-block text-base text-black font-bold text-sm border-[color:var(--greenish)] bg-[color:var(--greenish)] transition-colors duration-700 border-white hover:bg-[color:var(--limeish)] hover:text-black px-6 py-3 rounded-md"
             >
               View All Posts
             </Link>

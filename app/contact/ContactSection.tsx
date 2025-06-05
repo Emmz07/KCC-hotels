@@ -4,6 +4,8 @@ import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import MapEmbed from './Location';
+
 
 export function ContactSection() {
   return (
@@ -13,7 +15,7 @@ export function ContactSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
             Contact Us
           </h2>
-          <div className="w-20 h-1 bg-lime-500 mx-auto mb-4"></div>
+          <div className="w-20 h-1 bg-[color:var(--greenish)] mx-auto mb-4"></div>
           <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
             Have questions or need assistance? Our team is here to help. Reach out to us through any of 
             the channels below or fill out the contact form.
@@ -51,7 +53,7 @@ export function ContactSection() {
                   </label>
                   <Textarea id="message" placeholder="Your message here..." rows={5} />
                 </div>
-                <Button type="submit" className="w-full text-base text-sm border-lime-500 bg-lime-400 transition-colors duration-700 border-white hover:bg-lime-500 hover:text-white">Send Message</Button>
+                <Button type="submit" className="w-full text-white text-sm border-[color:var(--greenish)] bg-[color:var(--greenish)] transition-colors duration-700 border-white hover:bg-[color:var(--limeish)] hover:text-black">Send Message</Button>
               </form>
             </Card>
           </AnimateIn>
@@ -128,8 +130,12 @@ export function ContactSection() {
               </div>
             </Card>
           </AnimateIn>
+
+          <MapEmbed />
+         
         </div>
       </div>
+
     </section>
   );
 }

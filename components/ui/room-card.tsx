@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export interface RoomProps {
   id: string;
@@ -42,7 +43,9 @@ export function RoomCard({ room }: { room: RoomProps }) {
           </div>
         </CardContent>
         <CardFooter className="pt-0">
-          <Button className="w-full ">Book Now</Button>
+          <Link href="/rooms" className="w-full ">
+            <Button className="w-full bg-[color:var(--greenish)] hover:bg-[color:var(--limeish)] transition-colors duration-700 border-white hover:bg-[color:var(--limeish)] hover:text-black">Book Now</Button>
+          </Link>
         </CardFooter>
       </Card>
     </motion.div>

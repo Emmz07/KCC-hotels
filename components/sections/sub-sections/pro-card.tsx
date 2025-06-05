@@ -13,7 +13,7 @@ export default function PropertyCard() {
       className="bg-white rounded-lg shadow-2xl overflow-hidden transform transition-all duration-300 hover:shadow-[0_0_30px_rgba(218,165,32,0.3)]"
     >
       <div className="p-8">
-        <span className="font-inter text-sm uppercase tracking-wider text-green-500 font-semibold">
+        <span className="font-inter text-sm uppercase tracking-wider text-[color:var(--greenish)] font-semibold">
           Exclusive Offer
         </span>
         
@@ -35,7 +35,7 @@ export default function PropertyCard() {
           </div>
         </div>
         
-        <div className="mt-4 border-t-2 border-green-500 w-12"></div>
+        <div className="mt-4 border-t-2 border-[color:var(--greenish)] w-12"></div>
         
         <p className="font-inter text-gray-600 mt-6 leading-relaxed">
           Immerse yourself in Colombia&apos;s natural beauty with a stay at Cristales River Trip, 
@@ -45,9 +45,9 @@ export default function PropertyCard() {
         <div className="mt-8">
           <Button 
             variant="outline" 
-            className="flex items-center gap-2 border-green-500 text-green-500 hover:bg-green/5 hover:text-green-200 transition-all duration-300"
+            className="flex items-center gap-2 border-[color:var(--greenish)] text-[color:var(--greenish)]  hover:text-[color:var(--greenish)] transition-all duration-300"
           >
-            <BookmarkIcon className="w-4 h-4 text-green-500 hover:text-green-200" />
+            <BookmarkIcon className="w-4 h-4 text-[color:var(--greenish)] hover:text-[color:var(--limeish)]" />
             <span>Book Now</span>
           </Button>
         </div>

@@ -5,6 +5,9 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { AnimateIn } from '@/components/ui/animations';
+import Link from "next/link";
+
 
 const categories = ["All", "Coastal", "Mainland", "Desserts", "Beverages"];
 
@@ -74,27 +77,44 @@ export default function PopularDishesSection() {
 
   return (
     <section id="menu" className="py-20 mt-9">
+      <AnimateIn> 
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
+          Our Popular Dishes
+        </h2>
+        <div className="w-20 h-1 bg-[color:var(--greenish)] mx-auto mb-4"></div>
+        <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
+          Explore our most beloved dishes that have captivated the hearts and palates of our guests.
+        </p>
+      </AnimateIn>
+
+      <AnimateIn from="bottom" delay={0.1}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className=" text-3xl font-bold mb-4">Our Popular Dishes</h2>
-          <p className="text-muted-foreground">
-            Explore our most beloved dishes that have captivated the hearts and palates of our guests.
-          </p>
-        </div>
-        
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
-          {categories.map((category) => (
-            <Button
-              key={category}
-              variant={activeCategory === category ? "default" : "outline"}
-              onClick={() => setActiveCategory(category)}
-              className="rounded-full"
-            >
-              {category}
-            </Button>
-          ))}
-        </div>
-        
+        <AnimateIn>
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className=" text-3xl font-bold mb-4"></h2>
+            <p className="text-muted-foreground">
+              
+            </p>
+          </div>
+        </AnimateIn>
+
+          {/* Category Filters */}
+          <AnimateIn from="bottom" delay={0.2}>
+            <div className="flex flex-wrap justify-center gap-2 mb-12">
+              {categories.map((category) => (
+                <Button
+                  key={category}
+                  variant={activeCategory === category ? "default" : "outline"}
+                  onClick={() => setActiveCategory(category)}
+                  className="rounded-full"
+                >
+                  {category}
+                </Button>
+              ))}
+            </div>
+        </AnimateIn>
+
+        <AnimateIn from="bottom" delay={0.3}>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredDishes.map((dish) => (
             <div 
@@ -133,21 +153,31 @@ export default function PopularDishesSection() {
                   )}>
                     {dish.category}
                   </Badge>
-                  <Button variant="ghost" size="sm">
-                    Order Now
-                  </Button>
+                  <Link href="/room-details01" >
+                    <Button variant="ghost" size="sm">
+                      Order Now
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
           ))}
         </div>
-        
+        </AnimateIn>
+
+        <AnimateIn from="bottom" delay={0.4}>
         <div className="text-center mt-12">
+        <Link href="/room-details01" >
           <Button size="lg" variant="outline">
-            View Full Menu
+            Order Now
           </Button>
+
+        </Link>         
+          
         </div>
+        </AnimateIn>
       </div>
+      </AnimateIn>
     </section>
   );
 }

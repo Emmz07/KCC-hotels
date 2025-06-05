@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const carouselSlides = [
   {
@@ -90,12 +91,16 @@ const HeroCarousel = () => {
                 <p className="text-white/90 text-base md:text-lg mb-8 max-w-2xl">
                   {slide.description}
                 </p>
-                <Button  
-                  size="lg"
-                  className="rounded-full px-8 py-6 font-medium text-base text-sm border-lime-500 bg-lime-400 transition-colors duration-700 border-white hover:bg-lime-500 hover:text-white"
-                >
-                  View Prices
-                </Button>
+                <Link href="/rooms" className="inline-block">
+                  <Button  
+                    size="lg"
+                    className="rounded-full px-8 py-6 font-medium text-sm border-[color:var(--greenish)] bg-[color:var(--greenish)] transition-colors duration-700 border-white hover:bg-[color:var(--limeish)] hover:text-black"
+                  >
+                    Learn more
+                  </Button>
+                </Link>
+                
+                
               </div>
             </div>
           ))}
@@ -121,24 +126,21 @@ const HeroCarousel = () => {
       </div>
       
       {/* Dots */}
-      <div className="absolute z-20 bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute z-20 bottom-8 left-1/2 transform -translate-x-1/2 hidden sm:flex space-x-2">
         {scrollSnaps.map((_, index) => (
           <button
             key={index}
             onClick={() => scrollTo(index)}
             className={cn(
               "w-2 h-2 rounded-full transition-all duration-300",
-              index === selectedIndex ? "w-8 bg-lime-500" : "bg-white/50 hover:bg-white/80"
+              index === selectedIndex ? "w-8 bg-[color:var(--greenish)]" : "bg-white/50 hover:bg-white/80"
             )}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>
       
-      {/* Slide Counter */}
-      <div className="absolute z-20 bottom-8 left-8 md:bottom-16 md:left-16 text-white/80 text-sm font-medium ">
-        {selectedIndex + 1} / {scrollSnaps.length}
-      </div>
+      
     </div>
   );
 };

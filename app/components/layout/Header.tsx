@@ -121,8 +121,8 @@ export function Navbar() {
                     "dark:text-white text-black bg-transparent",
                     "hover:text-[color:var(--limeish)] active:text-[color:var(--greenish)]",
                     pathname === item.href
-                      ? "text-[color:var(--greenish)]"
-                      : ""
+                      ? "text-[color:var(--greenish)]  dark:text-[color:var(--greenish)]"
+                      : "text-black"
                   )}
                   onClick={() => setIsOpen(false)}
                 >

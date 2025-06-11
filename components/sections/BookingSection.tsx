@@ -17,7 +17,7 @@ export function Booking() {
   const [checkOut, setCheckOut] = useState<Date>()
 
   return (
-    <section className="relative z-20 container mx-auto px-4">
+    <section className="relative z-20 container mx-auto px-4 mt-5">
       <div className="transform -translate-y-24 md:-translate-y-28">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -31,7 +31,7 @@ export function Booking() {
                 
                 {/* Check-in */}
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-white">Check-in</label>
+                  <label className="text-sm font-medium text-black dark:text-white">Check-in</label>
                   <Popover>
                     <PopoverTrigger asChild>
                       <Button
@@ -59,7 +59,7 @@ export function Booking() {
 
                 {/* Check-out */}
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-white">Check-out</label>
+                  <label className="text-sm font-medium text-black dark:text-white">Check-out</label>
                   <Popover>
                     <PopoverTrigger asChild>
                       <Button
@@ -87,7 +87,7 @@ export function Booking() {
 
                 {/* Guests */}
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-white">Guests</label>
+                  <label className="text-sm font-medium text-black dark:text-white">Guests</label>
                   <Select>
                     <SelectTrigger className="bg-white/90 dark:bg-neutral-900/90 dark:text-white hover:bg-white">
                       <SelectValue placeholder="Select guests" />

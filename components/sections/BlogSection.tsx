@@ -90,17 +90,6 @@ export function BlogSection() {
             </AnimateIn>
           ))}
         </div>
-
-        <AnimateIn delay={0.4}>
-          <div className="text-center mt-12">
-            <Link 
-              href="#" 
-              className="inline-block text-base text-black font-bold text-sm border-[color:var(--greenish)] bg-[color:var(--greenish)] transition-colors duration-700 border-white hover:bg-[color:var(--limeish)] hover:text-black px-6 py-3 rounded-md"
-            >
-              View All Posts
-            </Link>
-          </div>
-        </AnimateIn>
       </div>
     </section>
   );

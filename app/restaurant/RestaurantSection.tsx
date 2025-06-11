@@ -76,7 +76,7 @@ export default function PopularDishesSection() {
     : dishes.filter(dish => dish.category === activeCategory);
 
   return (
-    <section id="menu" className="py-20 mt-9">
+    <section id="menu" className="py-20 mt-17 bg-gray-200 dark:bg-zinc-900">
       <AnimateIn> 
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
           Our Popular Dishes

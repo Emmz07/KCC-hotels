@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 export function MeetingsSection() {
   return (
-    <section id="meetings" className="py-20 bg-muted/30 mt-9">
+    <section id="meetings" className="py-20 mt-17 bg-gray-200 dark:bg-zinc-900">
       <div className="container mx-auto px-4">
         <AnimateIn>
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">

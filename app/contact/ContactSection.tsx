@@ -9,7 +9,7 @@ import MapEmbed from './Location';
 
 export function ContactSection() {
   return (
-    <section id="contact" className="py-20 bg-background mt-9">
+    <section id="contact" className="py-20 mt-17 bg-gray-200 dark:bg-zinc-900">
       <div className="container mx-auto px-4">
         <AnimateIn>
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
@@ -68,8 +68,8 @@ export function ContactSection() {
                   <div>
                     <h4 className="font-medium">Location</h4>
                     <p className="text-muted-foreground">
-                      123 Luxury Avenue, Cityville<br />
-                      Country, 12345
+                      P.O. Box 30858, Kibaha, Maili Moja<br />
+                      Pwani, Tanzania
                     </p>
                   </div>
                 </div>
@@ -131,9 +131,10 @@ export function ContactSection() {
             </Card>
           </AnimateIn>
 
-          <MapEmbed />
+          
          
         </div>
+        <MapEmbed />
       </div>
 
     </section>

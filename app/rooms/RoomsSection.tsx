@@ -6,7 +6,7 @@ import { AnimateIn } from '@/components/ui/animations';
 
 export default function RoomSection() {
   return (
-    <section className="py-20 mt-9 px-4 bg-background mb-9">
+    <section className="py-20 mt-17 bg-gray-200 dark:bg-zinc-900">
       <div className="max-w-6xl mx-auto">
         <AnimateIn>
           <RoomHeader />

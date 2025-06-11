@@ -1,8 +1,12 @@
+
 'use client';
 
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpCircle } from 'lucide-react';
+import Link from 'next/link';
+
+
 
 export function HeroSection() {
   // State for showing the back-to-top button
@@ -52,10 +56,22 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <p className="text-sm md:text-lg text-white mb-32 max-w-xl mx-auto">
+          <p className="text-sm md:text-lg text-white mb-5 max-w-xl mx-auto">
             A perfect hide out from the hassles of the city life and work In a welcoming atmosphere of relaxation.
           </p>
+         
+        <Link href="tel:+2347067723270" passHref>
+          <button
+            className="bg-transparent border text-center hover:bg-black/40 transition-colors duration-700 border-white w-45 rounded-xl h-10 relative text-black text-xl font-semibold group"
+            type="button"
+          >
+            
+            <p className=" text-white/60 hover:text-white transition-colors duration-700 text-lg">Get In Touch</p>
+          </button>
+        </Link>
+
         </motion.div>
+
       </div>
 
       {/* Sticky Back to Top Button*/}

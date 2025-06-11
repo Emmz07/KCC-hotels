@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 export function PicnicSection() {
   return (
-    <section id="picnic" className="py-20 bg-background mt-9">
+    <section id="picnic" className="py-20 mt-17 bg-gray-200 dark:bg-zinc-900">
       <div className="container mx-auto px-4"> 
         <AnimateIn>
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
@@ -71,7 +71,7 @@ export function PicnicSection() {
                 </div>
               </div>
 
-              <Button className="mt-2 text-base text-sm border-lime-500 bg-lime-400 transition-colors duration-700 border-white hover:bg-lime-500 hover:text-white">Book an Outdoor Event</Button>
+              <Button className="mt-2 text-base text-sm border-[color:var(--greenish)] bg-[color:var(--greenish)] transition-colors duration-700 border-white hover:bg-lime-600 hover:text-white">Book an Outdoor Event</Button>
             </div>
           </AnimateIn>
         </div>

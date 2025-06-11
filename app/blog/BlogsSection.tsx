@@ -1,7 +1,6 @@
 import { AnimateIn } from '@/components/ui/animations';
 import Image from 'next/image';
-import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
+
 
 interface BlogPost {
   id: string;

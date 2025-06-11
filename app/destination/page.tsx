@@ -208,7 +208,7 @@ const categories = [
 ];
 
 function DestinationPage() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [expandedCards, setExpandedCards] = useState<Set<number>>(new Set());

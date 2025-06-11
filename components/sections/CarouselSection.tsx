@@ -91,14 +91,7 @@ const HeroCarousel = () => {
                 <p className="text-white/90 text-base md:text-lg mb-8 max-w-2xl">
                   {slide.description}
                 </p>
-                <Link href="/rooms" className="inline-block">
-                  <Button  
-                    size="lg"
-                    className="rounded-full px-8 py-6 font-medium text-sm border-[color:var(--greenish)] bg-[color:var(--greenish)] transition-colors duration-700 border-white hover:bg-[color:var(--limeish)] hover:text-black"
-                  >
-                    Learn more
-                  </Button>
-                </Link>
+
                 
                 
               </div>

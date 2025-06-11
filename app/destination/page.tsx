@@ -224,9 +224,7 @@ function DestinationPage() {
     return matchesSearch && matchesCategory;
   });
 
-  const toggleTheme = () => {
-    setIsDark(!isDark);
-  };
+
 
   const toggleCardExpansion = (cardId: number) => {
     const newExpandedCards = new Set(expandedCards);

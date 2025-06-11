@@ -33,14 +33,14 @@ export function Navbar() {
     )}>
       <div className="container mx-auto px-4 relative flex items-center justify-between ">
         <Link href="/" className="flex items-center gap-2 mr-2">
-          <Image
-            src="/KCCH.png"
-            alt=""
-            width={100}
-            height={36}
-            className="h-6 w-24 md:h-10 md:w-36"
-            priority
-          />
+                <Image
+                src="/KCCH.png"
+                alt="KCCH logo"
+                width={200}          // actual image width
+                height={72}          // actual image height
+                className="h-11 w-38" // tailwind-controlled box size
+                priority
+              />
         </Link>
         
         {/* Desktop Nav */}
@@ -75,9 +75,8 @@ export function Navbar() {
         {/* Mobile Nav Toggle */}
         <div className="flex items-center md:hidden">
           <ThemeToggle />
-          
           <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)}>
-            <Menu className="h-6 w-6 text-white rounded" />
+            <Menu className="h-9 w-9 dark:text-white bg-white/40 rounded" />
             <span className="sr-only">Toggle menu</span>
           </Button>
         </div>
@@ -95,15 +94,16 @@ export function Navbar() {
             className="fixed inset-0 z-[100] bg-white dark:bg-black flex flex-col md:hidden transition-colors duration-300"
           >
             <div className="flex items-center justify-between py-4 px-8">
-              <Link href="/" className="flex items-center gap-2 mr-2" onClick={() => setIsOpen(false)}>
+              <Link href="/" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
                 <Image
-                  src="/KCCH.png"
-                  alt=""
-                  width={100}
-                  height={36}
-                  className="h-6 w-18"
-                  priority
-                />
+                src="/KCCH.png"
+                alt="KCCH logo"
+                width={200}          // actual image width
+                height={72}          // actual image height
+                className="h-11 w-38" // tailwind-controlled box size
+                priority
+              />
+
               </Link>
               <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
                 <X className="h-6 w-6 text-[color:var(--greenish)]" />
@@ -119,9 +119,9 @@ export function Navbar() {
                   className={cn(
                     "text-sm font-medium transition-colors duration-200 py-2 px-4 rounded",
                     "dark:text-white text-black bg-transparent",
-                    "hover:text-[color:var(--greenish)] active:text-[color:var(--limeish)]",
+                    "hover:text-[color:var(--limeish)] active:text-[color:var(--greenish)]",
                     pathname === item.href
-                      ? "text-[color:var(--limeish)]"
+                      ? "text-[color:var(--greenish)]"
                       : ""
                   )}
                   onClick={() => setIsOpen(false)}
@@ -136,7 +136,7 @@ export function Navbar() {
                 <Button
                   className="w-full py-4 text-base font-semibold rounded-lg border-[color:var(--greenish)] bg-[color:var(--greenish)] transition-colors duration-300 border-white hover:bg-gray-800 hover:text-white dark:hover:bg-gray-200 dark:hover:text-black active:bg-[color:var(--limeish)] active:text-black"
                 >
-                  Book Now
+                  Booking
                 </Button>
               </Link>
             </nav>

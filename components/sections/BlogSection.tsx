@@ -80,7 +80,7 @@ export function BlogSection() {
                   <h3 className="text-xl font-semibold mb-3">{post.title}</h3>
                   <p className="text-muted-foreground text-sm mb-4 flex-grow">{post.excerpt}</p>
                   <Link 
-                    href="#" 
+                    href="/blog" 
                     className="inline-flex items-center text-primary hover:text-primary/80 font-medium text-sm mt-auto"
                   >
                     Read More <ArrowRight className="ml-1 h-4 w-4" />

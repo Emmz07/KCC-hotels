@@ -97,12 +97,6 @@ export function BlogSection() {
                   </div>
                   <h3 className="text-xl font-semibold mb-3">{post.title}</h3>
                   <p className="text-muted-foreground text-sm mb-4 flex-grow">{post.excerpt}</p>
-                  <Link 
-                    href="#" 
-                    className="inline-flex items-center text-lime-600 hover:text-lime-500 font-medium text-sm mt-auto"
-                  >
-                    Read More <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
                 </div>
               </article>
             </AnimateIn>

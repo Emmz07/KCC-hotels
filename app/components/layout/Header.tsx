@@ -50,10 +50,12 @@ export function Navbar() {
               key={item.href}
               href={item.href}
               className={cn(
-                "text-sm font-medium transition-colors text-white hover:text-[color:var(--greenish)] active:text-[color:var(--limeish)]",
+                    "text-sm font-medium transition-colors duration-200 rounded",
+                    "dark:text-white text-zinc-400",
+                    "hover:text-[color:var(--limeish)] active:text-[color:var(--greenish)]",
                 pathname === item.href
-                  ? "text-[color:var(--limeish)]"
-                  : "text-[color:var(--greenish)]"
+                  ? "text-[color:var(--greenish)]  dark:text-[color:var(--greenish)]"
+                  : "text-zinc-400"
               )}
             >
               {item.title}
@@ -63,10 +65,9 @@ export function Navbar() {
 
           
           
-          
           <Link href="/rooms" >
-            <Button size="sm" className="text-base text-sm border-[color:var(--greenish)] bg-[color:var(--greenish)] transition-colors duration-700 border-white hover:bg-gray-800 hover:text-white dark:hover:bg-gray-200 dark:hover:text-black active:bg-[color:var(--limeish)] active:text-black">
-              Book Now
+            <Button size="sm" className="text-base font-semibold text-sm border-[color:var(--greenish)] bg-[color:var(--greenish)] transition-colors duration-700 border-white hover:bg-gray-800 hover:text-white dark:hover:bg-gray-200 dark:hover:text-black active:bg-[color:var(--limeish)] active:text-black">
+              BOOKING
             </Button>
           </Link>
 

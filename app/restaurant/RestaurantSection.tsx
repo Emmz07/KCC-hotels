@@ -153,7 +153,7 @@ export default function PopularDishesSection() {
                   )}>
                     {dish.category}
                   </Badge>
-                  <Link href="/room-details01" >
+                  <Link href="/restaurant" >
                     <Button variant="ghost" size="sm">
                       Order Now
                     </Button>
@@ -167,7 +167,7 @@ export default function PopularDishesSection() {
 
         <AnimateIn from="bottom" delay={0.4}>
         <div className="text-center mt-12">
-        <Link href="/room-details01" >
+        <Link href="/restaurant" >
           <Button size="lg" variant="outline">
             Order Now
           </Button>

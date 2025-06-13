@@ -73,7 +73,7 @@ export function Footer() {
           <div className="flex gap-2">
             <Input id="footer-form" placeholder="Your email" className="max-w-[220px]" />
             <Button type="submit" className="text-base text-sm border-[color:var(--greenish)] bg-[color:var(--greenish)] transition-colors duration-700 border-white hover:bg-[color:var(--limeish)] hover:text-black" size="sm">
-              Subscribe
+              SUBSCRIBE
             </Button>
           </div>
         </div>

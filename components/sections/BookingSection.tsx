@@ -25,7 +25,7 @@ export function Booking() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <Card className="border-none shadow-xl bg-white/20 backdrop-blur-md max-w-4xl mx-auto text-black dark:text-white">
+          <Card className="border-none shadow-xl bg-zinc-200 dark:bg-zinc-800 max-w-4xl mx-auto text-black dark:text-white">
             <CardContent className="p-4 md:p-6">
               <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
                 

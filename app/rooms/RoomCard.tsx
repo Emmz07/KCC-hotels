@@ -47,7 +47,7 @@ export default function RoomCard({ room, variant }: RoomCardProps) {
         "absolute bottom-0 left-0 right-0 flex justify-center z-10 transition-opacity duration-500",
         isHovered && "opacity-0"
       )}>
-        <div className="bg-white dark:bg-card text-foreground px-6 py-3 rounded-t-lg">
+        <div className="bg-gray-200 dark:bg-zinc-900 text-foreground px-6 py-3 rounded-t-lg">
           <h3 className="font-medium text-lg">{room.name}</h3>
         </div>
       </div>

@@ -79,8 +79,9 @@ export function ContactSection() {
                   <div>
                     <h4 className="font-medium">Phone</h4>
                     <p className="text-muted-foreground">
-                      Reservations: +1 (555) 123-4567<br />
-                      Front Desk: +1 (555) 765-4321
+                      Reservations: +255 232 402 644
+                      <br />        
+                      Front Desk: +255 754 657 202
                     </p>
                   </div>
                 </div>
@@ -90,7 +91,6 @@ export function ContactSection() {
                   <div>
                     <h4 className="font-medium">Email</h4>
                     <p className="text-muted-foreground">
-                      Reservations: reservations@kcchotels.com<br />
                       Information: info@kcchotels.com
                     </p>
                   </div>

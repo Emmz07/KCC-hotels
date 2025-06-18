@@ -39,7 +39,7 @@ export default function RoomImageSection() {
           
           <div className="flex justify-between items-center">
             <div>
-              <span className="text-2xl font-bold text-card-foreground">$349</span>
+              <span className="text-2xl font-bold text-card-foreground">$45</span>
               <span className="text-muted-foreground text-sm ml-1">per night</span>
             </div>
             

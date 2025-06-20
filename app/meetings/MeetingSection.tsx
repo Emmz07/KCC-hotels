@@ -1,6 +1,24 @@
+"use client";
+
 import { AnimateIn } from '@/components/ui/animations';
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+import React from "react";
+import { CheckCircle } from "lucide-react";
+
+const facilities = [
+  "Modern and full Air Condition (AC) Conference Rooms Capacity",
+  "Conference facilities can occupy up to 100 delegates",
+  "PowerPoint screen facilities",
+  "Flip chart and Maker Pens",
+  "A variety of seating arrangements / layouts",
+  "Seminar / Syndicate classrooms and offices",
+  "Lunches & refreshments",
+  "Onsite event planner",
+  "Delegate packs (writing materials / badges)",
+  "A free Parking Space",
+  "Free WiFi",
+  "Business support(stationary)",
+];
 
 export function MeetingsSection() {
   return (
@@ -17,73 +35,9 @@ export function MeetingsSection() {
           </p>
         </AnimateIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <AnimateIn from="bottom" delay={0.1}>
-            <div className="bg-background rounded-lg overflow-hidden shadow-md">
-              <div className="relative h-64">
-                <Image
-                  src="https://images.pexels.com/photos/159213/hall-congress-architecture-building-159213.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="Conference Room"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Conference Room</h3>
-                <p className="text-muted-foreground text-sm mb-4">
-                  Large, versatile space ideal for conferences, seminars, and large meetings. 
-                  Accommodates up to 100 guests with flexible seating arrangements.
-                </p>
-                <Button variant="outline" className="w-full">Book Now</Button>
-              </div>
-            </div>
-          </AnimateIn>
-
-          <AnimateIn from="bottom" delay={0.2}>
-            <div className="bg-background rounded-lg overflow-hidden shadow-md">
-              <div className="relative h-64">
-                <Image
-                  src="https://images.pexels.com/photos/416320/pexels-photo-416320.jpeg"
-                  alt="Boardroom"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Executive Boardroom</h3>
-                <p className="text-muted-foreground text-sm mb-4">
-                  Elegant boardroom with premium furnishings, perfect for high-level meetings and 
-                  executive discussions. Seats up to 20 people comfortably.
-                </p>
-                <Button variant="outline" className="w-full">Book Now</Button>
-              </div>
-            </div>
-          </AnimateIn>
-
-          <AnimateIn from="bottom" delay={0.3}>
-            <div className="bg-background rounded-lg overflow-hidden shadow-md">
-              <div className="relative h-64">
-                <Image
-                  src="https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg"
-                  alt="Training Room"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Training Suite</h3>
-                <p className="text-muted-foreground text-sm mb-4">
-                  Modern training space with interactive technology, ideal for workshops and 
-                  educational sessions. Configured for up to 50 participants.
-                </p>
-                <Button variant="outline" className="w-full">Book Now</Button>
-              </div>
-            </div>
-          </AnimateIn>
-        </div>
 
         <AnimateIn>
-          <div className="mt-12 bg-background p-6 md:p-8 rounded-lg shadow-md">
+          <div className="mt-12 mb-5 bg-background p-6 md:p-8 rounded-lg shadow-md">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="text-2xl font-semibold mb-3">Plan Your Next Event With Us</h3>
@@ -116,6 +70,25 @@ export function MeetingsSection() {
           </div>
         </AnimateIn>
       </div>
+
+      <section className="py-16 px-4 sm:px-8 lg:px-16">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-6 text-center">
+          Conference Facilities
+        </h2>
+        <ul className="grid gap-4 md:grid-cols-2">
+          {facilities.map((item, idx) => (
+            <li key={idx} className="flex items-start gap-3 text-sm text-gray-700 dark:text-gray-200">
+              <CheckCircle className="text-[color:var(--greenish)] mt-1" size={22} />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      </section>
     </section>
   );
 }
+
+
+

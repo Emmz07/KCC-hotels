@@ -1,6 +1,5 @@
 import { AnimateIn } from '@/components/ui/animations';
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
 
 export function PicnicSection() {
   return (
@@ -71,7 +70,6 @@ export function PicnicSection() {
                 </div>
               </div>
 
-              <Button className="mt-2 text-base text-sm border-[color:var(--greenish)] bg-[color:var(--greenish)] transition-colors duration-700 border-white hover:bg-lime-600 hover:text-white">Book an Outdoor Event</Button>
             </div>
           </AnimateIn>
         </div>

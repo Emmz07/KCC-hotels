@@ -77,12 +77,12 @@ export default function RestaurantSection() {
             viewport={{ once: true }}
           >
             <h1 className="text-3xl md:text-4xl font-bold dark:text-white text-black mb-6">
-              Restaurant & Bar
+              Restaurant &amp; Bar
             </h1>
             <div className="w-17 h-1 bg-[color:var(--greenish)] mx-auto mb-4"></div>
 
             <p className="text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              With culinary offerings ranging from fresh African specialties, Indian and a variety of seafood, KCC Hotels is celebrated for its rich fusion of flavors. Dine on pleasure-seeking cuisine bursting with creativity in our hotel's restaurants.
+              With culinary offerings ranging from fresh African specialties, Indian and a variety of seafood, KCC Hotels is celebrated for its rich fusion of flavors. Dine on pleasure-seeking cuisine bursting with creativity in our hotel&apos;s restaurants.
             </p>
           </motion.div>
         </div>

@@ -60,7 +60,7 @@ export function HeroSection() {
             A perfect hide out from the hassles of the city life and work In a welcoming atmosphere of relaxation.
           </p>
 
-        <Link href="tel:+255232402644" passHref>
+        <Link href="tel:+255754657202" passHref>
           <button
             className="bg-transparent border text-center hover:bg-black/40 transition-colors duration-700 border-white w-45 rounded-xl h-10 relative text-black text-xl font-semibold group"
             type="button"

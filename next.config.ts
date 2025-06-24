@@ -1,4 +1,4 @@
-/** @type {import('next').NextConfig} */
+/** @type {import('next').NextConfig} */ 
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -6,6 +6,12 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'images.pexels.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'imgcy.trivago.com',
         port: '',
         pathname: '/**',
       },

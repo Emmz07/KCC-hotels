@@ -47,7 +47,7 @@ export function Footer() {
           <address className="not-italic space-y-2">
             <p className="text-sm text-muted-foreground">P.O. Box 30858, Kibaha, Maili Moja</p>
             <p className="text-sm text-muted-foreground">Pwani, Tanzania</p>
-            <p className="text-sm text-muted-foreground">+255 232 402 644, +255 754 657 202</p>
+            <p className="text-sm text-muted-foreground">+255 754 657 202</p>
             <p className="text-sm text-muted-foreground">info@kcchotel.com</p>
           </address>
 

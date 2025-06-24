@@ -78,9 +78,7 @@ export function ContactSection() {
                   <Phone className="h-5 w-5 text-primary shrink-0 mt-1 mr-3" />
                   <div>
                     <h4 className="font-medium">Phone</h4>
-                    <p className="text-muted-foreground">
-                      Reservations: +255 232 402 644
-                      <br />        
+                    <p className="text-muted-foreground">     
                       Front Desk: +255 754 657 202
                     </p>
                   </div>

@@ -35,6 +35,35 @@ export function MeetingsSection() {
           </p>
         </AnimateIn>
 
+        {/* Images Row */}
+        <AnimateIn>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div className="rounded-xl overflow-hidden shadow-md">
+              <img
+                src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1020,q_auto,w_2000/partner-images/13/5e/9df9d4a6de1ea522d2c076d464f9be807404cc2c0762fce42775c9ad3013.jpeg"
+                alt="Conference Room 1"
+                className="w-full h-64 object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-md">
+              <img
+                src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1020,q_auto,w_2000/partner-images/8a/3a/23286a81250e17485655422b083f89d06d3719570c6b09bfde8c31dbd2ed.jpeg"
+                alt="Conference Room 2"
+                className="w-full h-64 object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-md">
+              <img
+                src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1020,q_auto,w_2000/partner-images/a5/94/f9128cfc4f2a37f6c13f960280912242e6024b1d743efaba75102618c427.jpeg"
+                alt="Conference Room 3"
+                className="w-full h-64 object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </AnimateIn>
 
         <AnimateIn>
           <div className="mt-12 mb-5 bg-background p-6 md:p-8 rounded-lg shadow-md">
@@ -72,23 +101,20 @@ export function MeetingsSection() {
       </div>
 
       <section className="py-16 px-4 sm:px-8 lg:px-16">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-6 text-center">
-          Conference Facilities
-        </h2>
-        <ul className="grid gap-4 md:grid-cols-2">
-          {facilities.map((item, idx) => (
-            <li key={idx} className="flex items-start gap-3 text-sm text-gray-700 dark:text-gray-200">
-              <CheckCircle className="text-[color:var(--greenish)] mt-1" size={22} />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-6 text-center">
+            Conference Facilities
+          </h2>
+          <ul className="grid gap-4 md:grid-cols-2">
+            {facilities.map((item, idx) => (
+              <li key={idx} className="flex items-start gap-3 text-sm text-gray-700 dark:text-gray-200">
+                <CheckCircle className="text-[color:var(--greenish)] mt-1" size={22} />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
     </section>
   );
 }
-
-
-

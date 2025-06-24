@@ -4,24 +4,16 @@ import RoomCarousel from './RoomCarousel'
 // Sample room images from Pexels
 const roomImages = [
   {
-    src: "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    src: "https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_534,q_40,w_800/hotelier-images/30/37/f8500feb5ec598d96e1cb23d50ef06b142f1c64397ebdd522f2ac547fb37.jpeg",
     alt: "Luxury Hotel Room"
-  },
-  {
-    src: "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    alt: "Hotel Room with Ocean View"
   },
   {
     src: "https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     alt: "Elegant Hotel Suite"
   },
   {
-    src: "https://images.pexels.com/photos/6585742/pexels-photo-6585742.jpeg?auto=compress&cs=tinysrgb&w=600",
+    src: "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1020,q_auto,w_2000/partner-images/96/3c/8913bab1ee13f69f567626aa7a4189577114a8b9ad01c1964743b12ef29a.jpeg",
     alt: "Modern Hotel Bathroom"
-  },
-  {
-    src: "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    alt: "Hotel Room with King Size Bed"
   }
 ]
 

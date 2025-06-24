@@ -52,7 +52,7 @@ export function Navbar() {
               className={cn(
                     "text-sm font-medium transition-colors duration-200 rounded",
                     "dark:text-white text-zinc-400",
-                    "hover:text-[color:var(--limeish)] active:text-[color:var(--greenish)]",
+                    "hover:text-[color:var(--greenish)] active:text-[color:var(--greenish)] dark:hover:text-[color:var(--greenish)]",
                 pathname === item.href
                   ? "text-[color:var(--greenish)]  dark:text-[color:var(--greenish)]"
                   : "text-zinc-400"
